@@ -28,3 +28,56 @@ hr {
     background-color: black;
     height: 2px;
 }
+
+
+/*PRODUCTS PAGE*/
+.product_photo {
+    background-color: green;
+    width: 177px;
+    height: 208px;
+}
+
+#product_container {
+    display: flex;
+    gap: 71px;
+    justify-content: center;
+    top: 71px;
+}
+
+.disp_absolute {
+    position: absolute;
+}
+
+.disp_relative {
+    position: relative;
+}
+
+.add_btn_container {
+    text-align: center;
+    position: relative;
+    top: 40px;
+}
+
+.add_btn_container > button {
+    width: 75px;
+    height: 30px;
+}
+
+.product_name {
+    position: relative;
+    top: 11px;
+    font-weight: 600;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+.product_price {
+    position: relative;
+    top: 20px;
+    left: 15px;
+    font-size: 15px;
+}
+
+#view_cart_btn_container {
+    text-align: center;
+}
