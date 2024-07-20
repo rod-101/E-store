@@ -103,3 +103,29 @@ hr {
 .quantity {     
     font-size: 25px;
 }
+
+#cost_container {
+    border: 1px solid black;
+    padding: 7px 46px;
+    width: 200px;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    /* top: 20px; */
+}
+
+
+#cost_container > div{
+    width: 100%;
+    position: relative;
+    font-size: 18px;
+}
+
+#cost_container > div > span {
+    right: 0px;
+    position: absolute;
+}
+
