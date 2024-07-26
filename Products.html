@@ -3,65 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-store Products</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Products</title>
 </head>
 <body>
-    <h2 class="header">Products</h2>
-
-    <div id="container" class="disp_relative">
-        <div id="product_container" class="disp_relative">
-
-
-            <div class="product_component">
-                <div class="product_photo">
-                    <img src="photo.jpg" alt="product photo">
-                </div>
-                <div class="product_name">
-                    Talong
-                </div>
-                <div class="product_price">
-                    P20.00
-                </div>
-                <div class="btn_container">
-                    <button class="add_btn">Add</button>
-                </div>
-            </div>
-            
-            
-            <div class="product_component">
-                <div class="product_photo">
-                    <img src="photo.jpg" alt="product photo">
-                </div>
-                <div class="product_name">
-                    Saluyot
-                </div>
-                <div class="product_price">
-                    P25.00
-                </div>
-                <div class="btn_container"><button class="add_btn">Add</button></div>
-            </div>
-            
-            
-            <div class="product_component">
-                <div class="product_photo">
-                    <img src="photo.jpg" alt="product photo">
-                </div>
-                <div class="product_name">
-                    Kamatis
-                </div>
-                <div class="product_price">
-                    P40.00
-                </div>
-                <div class="btn_container"><button class="add_btn">Add</button></div>
-            </div>
-
-
-        </div>
+    <div>
+        
+    </div>
+    
+    <div>
+        <label for="#pName">Product: </label>
+        <input type="text" id="pName">
+        <label for="#pPrice">Price: </label>
+        <input type="text" id="pPrice">
+        <label for="pInstock">Quantity available: </label>
+        <input type="text" id="pInStock">
+        <button id="addProd" onclick="addProduct()">Add</button>
     </div>
 
-    <div id="view_cart_btn_container">
-        <button id="view_cart_btn">View cart</button>
-    </div>
+    <script src="index.js"></script>
 </body>
 </html>
