@@ -6,7 +6,7 @@ const products = [];
 
 
 
-
+//add the product being created to the 'products' array
 function addProduct() {
     let pName = document.querySelector('#pName');
     let price = document.querySelector('#pPrice');
@@ -21,7 +21,7 @@ function addProduct() {
         }
     }
 
-    //add product if fields are not empty
+    //add product works only if fields are not empty   
     if(pName.value && price.value && qntyInStock.value) {
         newProd = product(pName.value, price.value, qntyInStock.value)
         products.push(newProd)
@@ -32,23 +32,24 @@ function addProduct() {
     }
 }
 
-//iterates through the properties of the objects
-//in the products array
+
+
+//display object data (i.e. name, price, stock) from 'products' array on screen
 function displayProducts() {
     let main = document.querySelector('#products');
     let prod_container;
-    
-    //clear contents first
     main.textContent = ''
     
+    //displays data (i.e. name, price, stock) in a certain format/style
     let displayProductDataInContainer = function(i, prop,container) {  
         let content = document.createTextNode(`${prop}: ${products[i][prop]} `)
+
         container.appendChild(content)
-        
         main.appendChild(container)
-        console.log(`${products[i][prop]}`)
+        console.log(`${products[i][prop]}`) //for debugging
     }
 
+    //creates container (div) for each object's data to be stored in
     for (let i = 0; i < products.length; i++) {
         prod_container = document.createElement('div')
         
@@ -57,7 +58,3 @@ function displayProducts() {
         }
     }
 }
-
-//loop throuh the array
-//the loop creates a div for each item in the array
-//in that div, the data from the object are displayed 
