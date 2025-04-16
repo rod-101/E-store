@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+</head>
+<body>
+    <div id="addContainer">
+        <label for="name">Name: </label>
+        <input type="text" id="name">
+
+        <label for="price">Price: </label>
+        <input type="text" id="price">
+
+        <label for="quantity">Quantity: </label>
+        <input type="text" id="quantity">
+
+        <button onclick="addProduct()">Add</button>
+    </div>
+
+    <table id="adminTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+
+    <script src="admin.js"></script>
+</body>
+</html>
